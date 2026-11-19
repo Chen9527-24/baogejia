@@ -1,0 +1,22 @@
+name: 申请访问报个价源码
+description: 申请用于非商业学习、研究或本地评估的源码访问权
+title: "[源码申请] "
+body:
+  - type: markdown
+    attributes:
+      value: "维护者会把私有仓库邀请发给提交申请的 GitHub 账号。此表公开可见，请勿填写个人联系方式、客户资料或商业机密。"
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 你想用源码做什么？
+      description: 请说明要了解的功能、使用环境及用途。
+      placeholder: 我想在本地用虚构数据跑一次询报价，看看系统怎样区分采购方和供应商的附件权限。
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 使用范围
+      options:
+        - label: 我已阅读并接受[报个价源码非商业使用许可 1.0](https://github.com/Chen9527-24/baogejia/blob/main/LICENSE.md)，仅在获批范围内使用，不商用，不向未获批准的人分发。
+          required: true
